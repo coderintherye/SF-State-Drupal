@@ -1,0 +1,46 @@
+/* Custom styling on top of panels to give them borders and spacing */
+.panel-pane {border:1px dotted #9999cc;}
+.panel-2col .panel-col-first, .panel-2col .panel-col-last  {margin:1%; width:47%;}
+* html .panel-2col .panel-col-first, * html .panel-2col .panel-col-last {margin:1%; width:47%;}
+.panel-pane {padding: 2% 2% 2% 2%;}
+div.pane-content ul {padding-left:15px;}
+
+/* make panel bg white and pane titles white with purple background and content space correctly*/
+.panel-pane {background-color:#ffffff;}
+.pane-title {background-color:rgb(49,43,114); color:#ffffff;}
+#main .panel-pane .pane-title {background-color:rgb(49,43,114); color:#ffffff; margin:0px; padding:10px;}
+#main .panel-pane {padding:0px; margin:0px;}
+#main .pane-content {padding:2%;}
+
+/* drop shadows and curved corners on webkit and firefox and maybe IE via a htc file */
+#main .panel-pane {-moz-box-shadow:2px 2px 2px 2px #333333;}
+#main .panel-pane {
+-moz-border-radius:10px;
+-webkit-border-top-left-radius: 10px;
+-webkit-border-top-right-radius: 10px;
+-webkit-border-bottom-left-radius: 10px;
+-webkit-border-bottom-right-radius: 10px;
+behavior:url(sites/all/themes/new/scripts/border-radius.htc);
+}
+
+/* have to also round the top corners for the h2 pane titles */
+
+#main .panel-pane h2 {
+-moz-border-radius-topleft:10px;
+-moz-border-radius-topright:10px;
+-webkit-border-top-left-radius: 10px;
+-webkit-border-top-right-radius: 10px;
+}
+
+/* custom panel colors for search */
+
+#main .pane-search-0, #main .pane-search-0 h2.pane-title {background-color:rgb(239,178,20);}
+
+/* make the label for the searchbox a readernote */
+
+#main .pane-search-0 label {position:absolute; top:-9999px; color:#ffffff;}
+#main .pane-search-0 div.form-item {display:block;}
+#main .pane-search-0 input.form-text {width:100%; border:0px;}
+#main .pane-search-0 div.container-inline {text-align:right; margin-left:5%; margin-right:5%; margin-bottom:5%;}
+#main .pane-search-0 .form-submit {margin-top:3%;}
+#main .pane-search-0 .pane-title {margin-left:2%;}

@@ -1,0 +1,308 @@
+/* Adding styles for tabs to look like Portal, navigation and tab styles borrowed from Sky theme */
+/* Override contentbox styles */
+#contentbox {
+  width:100%;
+  max-width:100%;
+  padding: 0px 0px;
+}
+#content {
+  margin-left:2%;
+  margin-right:2%;
+}
+/* @group Navigation */
+/* @group Nav Bar */
+/**
+ * Controls the backround color of the bar and
+ * the default background state of the links
+ */
+#navigation {
+  background: #fff url('../images/bg-shade-gold.png') repeat-x bottom left;
+  border-bottom: solid 1px rgb(239,178,20);
+  height: 2.75em;
+  width: 70%;
+  margin-left:3%;
+  margin-bottom:2%;
+  -moz-box-shadow:2px 3px 2px 2px #333333;
+}
+
+/**
+ * Navigation Layout Alignment from theme settings
+ * Credit: CSS Play, Centering Floats: http://www.cssplay.co.uk/menus/centered.html
+ */
+#navigation del {
+  text-decoration: none!important;
+}
+#navigation .wrap-center {
+  display: table;
+  margin: 0 auto;
+}
+#navigation .wrap-left {
+  float: left;
+}
+#navigation .wrap-right {
+  float: right;
+}
+/* @end */
+/* @group Level 1 */
+#navigation ul {
+  /* line-height: 2.75em; */
+  list-style: none;
+  margin: .225em auto 0;
+  padding: 0;
+  z-index: 998;
+  opacity: 0.9999; /* Fixes bug FF2 with Superfish menus */
+  border: none;
+  /* position: relative; */
+  display:table;
+  text-align:center;
+  width:100%;
+}
+html>/**/body #navigation {
+ opacity: 1; /* Sets the opacity back for FF3 */
+}
+#navigation li {
+  display:table-cell;
+  padding: 0 2.5px;
+  *display:block;
+  *float:left;
+  *font-weight:bold;
+}
+
+/* First level links */
+#navigation a,
+#navigation a:visited {
+  background:transparent;
+  border: none;
+  color: #330066;
+  display: block;
+  font-size: 1.15em;
+  font-weight: bold;
+  margin: 0;
+  overflow: hidden;
+  padding: 0 1.2em;
+  text-decoration: none;
+}
+/* First level regular link hover */
+#navigation a:hover,
+#navigation a:visited:hover,
+#navigation .active-trail a.active:hover,
+#navigation .active-trail a:hover {
+  color: #ffffff;
+  text-shadow: none;
+}
+#navigation .expanded a {
+  background: transparent url('../images/icn-arrow-down-light.png') no-repeat 96% 51%;
+}
+/* First level expandable active & hover state */
+#navigation .sfHover a,
+#navigation .sfHover a:hover {
+  background: #fff url('../images/bg-shade-light-flip.png') repeat-x;
+  color: #777;
+}
+/* First level regular link active */
+#navigation .active-trail a,
+#navigation .active-trail a.active {
+  color: #ffffff;
+  background-color: #330066;
+}
+/* @end */
+/* @group Level 2 + */
+#navigation ul ul {
+  background: #fff url('../images/bg-shade-white-lrg.png') repeat-x 0 100%;
+  border: solid 1px #ddd;
+  border-top: 0;
+  width: 15em;
+  left: 0;
+  line-height: 1.25em;
+  color: #555;
+  display: none; /* make sure the submenus aren't visible on load */
+  margin: 0 0 0 -1px; /* make up for border */ 
+  padding: 0;
+  position: absolute;
+  top: 2.75em;
+  z-index: 1000;
+}
+#navigation ul ul li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 15em;
+  line-height: normal;
+  border-right: none;
+  text-align: left;
+}
+#navigation li .expanded ul {
+  margin: -2.65em 0 0 15em;
+}
+/* Second level links */
+#navigation ul ul li a,
+#navigation ul ul li a:visited,
+#navigation ul li.active-trail ul li a,
+#navigation .sfHover ul li a {
+  background: none;
+  border-bottom: solid 1px #eee;
+  color: #555;
+  display: block;
+  font-size: 0.9em;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 0.5em 1.25em 0.5em 0.75em;
+  text-decoration: none;
+}
+/* remove bottom border, since it's being applied at ul level */
+#navigation ul ul li.last a {
+  border-bottom: none;
+}
+/* indicate menu has children with right arrow bg image */
+#navigation ul ul li.expanded {
+  background: transparent url('../images/icn-arrow-right-light.png') no-repeat 96.5% 50%;
+}
+/* make sure children of expanded menus don't inherit indicator */
+#navigation ul li.expanded li.leaf {
+  background: none;
+}
+/* hover state for all submenu links */
+#navigation ul ul li a:hover,
+#navigation ul ul li a:visited:hover {
+  background: #ebebeb url('../images/bg-shade-medium.png') repeat-x 0 100%!important;
+  color: #fff!important;
+}
+/* active submenu link */
+#navigation ul li.active-trail ul li a.active {
+  color: #000;
+}
+#navigation ul ul ul {
+  z-index: 1001;
+  margin: 0;
+  top: 2.65em;
+}
+/* @end */
+/* @end */
+
+/* @group Primary */
+#tabs-primary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+  font-size: 1em;
+  float: left;
+  position: relative;
+  z-index: 1;
+  bottom: -1px;
+}
+#tabs-primary ul {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  list-style: none;
+  display: block;
+  float: left;
+  width: 100%;
+}
+#tabs-primary ul li {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  list-style: none;
+  float: left;
+  display: block;
+}
+#tabs-primary ul li:last-child {
+  border-right: solid 1px #ddd;
+}
+#tabs-primary ul li.active::hover:last-child {
+  border-right: solid 1px #858585;
+}
+#tabs-primary ul li.active:last-child {
+  border: none;
+  background: #fff;
+}
+#tabs-primary ul li a {
+  background: #fff url('../images/bg-shade-light.png') repeat-x 0 100%;
+  color: #555555;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border-top: solid 1px #ddd;
+  border-left: solid 1px #ddd;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+  float: left;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 0.5em 1.1em;
+}
+#tabs-primary ul li a:hover {
+  background: #ebebeb url('../images/bg-shade-medium.png') repeat-x 0 100%;
+  color: #fff;
+  text-shadow: #555 1px 1px 1px;
+  border-color: #999;
+}
+#tabs-primary ul li.active {
+  background: #858585 url('../images/bg-shade-dark.png') repeat-x 0 100%;
+  color: #fff;
+}
+#tabs-primary ul li.active a,
+#tabs-primary ul li.active a:hover {
+  background: #858585 url('../images/bg-shade-dark.png') repeat-x 0 100%;
+  color: #fff;
+  line-height: 1.9;
+  margin-top: -0.6em;
+  border-color: #858585;
+}
+
+/* @end */
+/* @group Secondary */
+#tabs-secondary {
+  background: #858585 url('../images/bg-shade-dark-flip.png') repeat-x 0 0%;
+  color: #fff;
+  float: left;
+  position: relative;
+  width: 100%;
+  border: solid 1px #858585;
+  border-top: none;
+}
+#tabs-secondary ul {
+  display: inline;
+  list-style: none;
+  float: left;
+  padding: 0.5em;
+  margin: 0;
+}
+#tabs-secondary ul li {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+#tabs-secondary ul li a {
+  font-size: 1em;
+  float: left;
+  padding: 0.5em 0.75em;
+  margin: 0 0.15em 0 0;
+  color: #fff;
+  text-shadow: #444 1px 1px 1px;
+}
+#tabs-secondary ul li:last-child a {
+  border-right: none;
+}
+#tabs-secondary ul li a:hover,
+#tabs-secondary ul li.active a {
+  background: #ededed url('../images/bg-shade-medium.png') repeat-x 0 100%;
+  color: #fff;
+  text-shadow: #555 1px 1px 1px;
+  border-color: #999;
+}
+/* @end */
+/* @end */

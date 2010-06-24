@@ -1,0 +1,141 @@
+*					{margin:0px; padding:0px; font-size:100%;}
+
+html					{}
+
+body					{min-width:552px; height:100%; font:62.5%/170% Arial, sans-serif; color:#000000; background:rgb(239,178,20); border:none;}
+
+img					{border:0;}
+
+.clearfloat				{clear:both; height:0px; overflow:hidden;}
+.clearleft				{clear:left; height:0px; overflow:hidden;}
+.readernote				{position:absolute; top:-9999px; color:#000000;}
+.searchbox				{margin:0 5px 0 0; padding:0px; border:1px solid #cccccc; color:#000000;}
+.searchbox:focus			{border:1px solid #eebb44;}
+.searchbutton				{margin: 0 0 -4px 0; border:none; color:#777777;}
+
+/* - - - - - - - utility - - - - - - - */
+
+#utilitystripe {background:rgb(239,178,20) none repeat scroll 0%; width:100%;}
+#utilitybox {background:rgb(239,178,20) none repeat scroll 0%; color:#CCCCCC; font-size:110%; margin:auto; padding-top:8px; text-align:right; width:100%;}
+
+/* - - - - - - - site - - - - - - - */
+
+#sitestripe				{width:100%; background-color:rgb(239,178,20);}
+#sitebox				{width:100%; margin:0 auto; height:60px; text-align:left; background-color:rgb(239,178,20);}
+
+/* - - - - - - - image - - - - - - - */
+
+#imagestripe				{width:100%; background-color:rgb(239,178,20)}
+#promobox				{width:98%; height:200px; float:right; text-align:right; background:transparent url(../images/insideheader.png) no-repeat scroll 13% 0; margin-right:2%;}
+
+/* - - - - - - - content - - - - - - - */
+
+#contentstripe				{width:100%; background:#ffffff;}
+#contentbox				{width:100%; margin:auto; padding:20px 0; background:#ffffff;}
+
+#main 					{min-height:300px; background-color:rgb(239,178,20);}
+
+/* - - - - - - - menu - - - - - - - */
+
+#menustripe				{width:100%; background:#4d4d4d;}
+#menubox				{width:98%; max-width:900px; margin:auto; padding:15px 0; border:none; color:#cccccc; background:#4d4d4d;}
+
+/* - - - - - - - footer - - - - - - - */
+
+#footerstripe 			{background:rgb(239,178,20) none repeat scroll 0%; width:100%;}
+#footerbox 				{background:transparent none repeat scroll 0%; color:#ffffff; margin:0pt auto;}
+
+/* - - - - - - - no columns in this theme - - - - - - - */
+
+/* - - - - - - - content styles - - - - - - - */
+
+#utilitystripe .skiplinks {position:absolute; top:0px; left:10px;}
+#utilitystripe .skiplinks li {list-style-type:none;}
+#utilitystripe a.skip {color:rgb(239,178,20);}
+#utilitystripe a.skip:focus {color:#DDDDDD;}
+#utilitystripe a.skip:hover {color:#DDDDDD;}
+
+#utilitybox .skiplinks 		{position:absolute; top:0px; left:10px;}
+#utilitybox .skiplinks li	{list-style-type:none; border:none;}
+#utilitybox a.skip  		{color:#333333;}
+#utilitybox a.skip:focus	{color:#dddddd;}
+#utilitybox a.skip:hover	{color:#dddddd;}
+
+#utilitybox ul			{display:inline; margin-right:3%; padding:7px 0;}	
+#utilitybox li			{display:inline; padding-left:7px; margin-right:7px; border-left:1px dotted #999999;}
+#utilitybox a			{text-decoration:none; color:#dddddd;}
+#utilitybox form			{display:inline; line-height:0;}
+#utilitybox div			{display:inline; border:none}
+
+#promobox h2			{margin:20px 0px 5px 15px; font-size:110%; color:#ffffff;}
+#promobox p			{margin-left:10px; font-size:110%; color:#ffffff;}
+#promobox a			{text-decoration:none; font-size:150%; color:#330066;}
+
+#promobox a:focus,
+#promobox a:hover		{color:#ffffff;}
+#promobox p			{margin-top:10px;}
+
+#sitebox h1			{margin-bottom:5px; margin-left: 3%; padding-top:38px; font-size:200%; color:#ffffff;}
+#sitebox a.site			{text-decoration:none; color:#ffffff;}
+
+#main h1			{margin-bottom:6px; font-size:150%; color:#464666;}
+#main .smallh1			{font-size:90%; color:#5d5d88;}
+#main h2			{margin:10px 0; font-size:170%; color:#330066;}
+#main h3			{margin:2px 0; font-size:140%; color:#464666}
+#main h4			{font-size:130%; font-weight:bold; font-style:italic; color:#464666;}
+#main h5			{font-size:120%; font-weight:normal; font-style:italic; color:#464666;}
+#main p				{margin:2px 0 4px 0; font-size:120%;}
+#main .intro			{font-size:130%; line-height:150%; color:#505066;}
+#main .small			{font-size:100%; line-height:150%; font-style:italic; color:#505066;}
+#main .caption			{font-size:100%; line-height:150%; font-style:italic; color:#505066;}
+
+#main a				{text-decoration:none; border-bottom:1px solid #ddddcc; color:#330066;}
+#main a:visited			{color:#66418C;}
+#main a:focus,
+#main a:hover,
+#main a:visited:hover		{color:#ffffff; background-color:#330066;}
+
+#main a.skip,
+#main a.skip:visited		{margin:0; text-decoration:none; border:none; font-size:90%; line-height:100%; color:#ffffff;}
+#main a.skip:focus,		
+#main a.skip:hover		{color:#666600; border-bottom:1px solid #ddddcc;}
+
+#main ul			{margin:2px 0 4px 2px;}
+#main ol			{margin:2px 0 4px 22px;}
+#main ol li			{font-size:110%;}
+
+#main table			{width:100%; margin:4px 0; text-align:left; font-size:110%; color:#666600; border-spacing:3px; border:1px;}
+#main table a			{border-bottom:1px solid #ddddcc;}
+
+#main .tablecol1		{width: 50%;}
+#main .tablecol2		{width: 25%;}
+#main .tablecol3		{width: 25%;}
+#main td, #main th		{padding-right:10px; vertical-align:top; border-top: 1px dotted #ddddcc;}
+#main thead th			{font-weight:normal; color:#ffffff}
+#main tfoot			{font-size:95%;}
+#main th 			{padding:3px; color:#ffffff; background-color:#330066; text-align:center; border:1px solid #330066; white-space:nowrap;}
+#main th a, #main th a:visited 	{color:#ffffff;}
+#main td 			{padding:3px; background-color:#ffffff; border:1px solid #330066; color:#000000}
+#main td a 			{color:#66418C;}
+
+#main img			{float:left; margin:4px 15px 5px 0;}
+#main img.full			{width:470px; display:block; float:none; margin:15px 0 5px 0;}
+#main .imgcap			{float:left; margin:4px 15px 0px 0;}
+#main .imgcap img		{float:none; display:block; margin:0}
+
+#main .brief			{width:100%; float:left; padding-top:10px; border-top:1px dotted #ddcc77;}
+#main .brief img		{float:left; margin:4px 15px 5px 0;}
+#main .brief p			{margin-bottom:15px;}
+#main .brief h2			{margin-top:0; }
+#main .brief h2 a		{padding-left:15px; background:url(https://www.sfsu.edu/template/images/arrowgold.png) no-repeat 0 5px; color:#886600;}
+#main .brief h2 a:focus,
+#main .brief h2 a:hover	{color:#999900;}
+
+#main .localnav li		{list-style-type:none; padding-left:10px; font-size:110%; background:url(https://www.sfsu.edu/~itpolicy/images/inpagelink.png) no-repeat 0 4px;}
+#main .top			{margin:0 0 8px 0; font-size:100%; color:#666600;}
+	
+#footerbox ul			{line-height:25px; margin-left:3%;}	
+#footerbox li			{display:inline; padding-left:4px; margin-right:4px; border-left:1px dotted #330066; color:#330066;}
+#footerbox li.first		{border-left:none; padding-left:0;}
+#footerbox a			{text-decoration:none; border-left:none; color:#330066;}
+#footerbox img			{border:none; float:left; vertical-align:top; margin:0 0 0 130px; padding-bottom:0px;}

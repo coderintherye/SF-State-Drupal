@@ -1,0 +1,36 @@
+/* $Id: twocol.css,v 1.1.2.1 2008/12/16 21:27:58 merlinofchaos Exp $ */
+
+.panel-twocol { 
+/*  overflow: hidden;  */
+}
+
+.panel-col-first75 { 
+  float: left; 
+  width: 75%;
+  padding-right:1%;
+}
+
+.panel-col-first75 .inside { 
+  margin: 0 .5em 1em 0;
+}
+
+.panel-col-last25 { 
+  float: left; 
+  width: 23%;
+}
+* html .panel-col-last25 {
+  width: 23%;
+}
+
+.panel-col-last25 .inside { 
+  margin: 0 0 1em .5em;
+}
+
+#panels-edit-display .panel-pane,
+#panels-edit-display .helperclass {
+  margin: .5em;
+}
+
+.panel-separator {
+  margin: 0 0 1em 0;
+}
