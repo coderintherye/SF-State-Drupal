@@ -11,7 +11,7 @@ engine = phptemplate
 
 stylesheets[all][] = includes/global.css
 stylesheets[all][] = includes/local.css
-stylesheets[all][] = includes/style.css
+;stylesheets[all][] = includes/style.css
 stylesheets[all][] = includes/table.css
 stylesheets[print][] = includes/print.css
 

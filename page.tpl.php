@@ -43,14 +43,26 @@ http://www.sfsu.edu/template and to meet California Government Code 11135, imple
 			      				</li>
 		</ul></div></div><!-- x utility -->
 		
-<!-- o site --><div id="sitestripe">
+<!-- o site -->
+<div id="sitestripe">
   <div id="sitebox">
-    <h2>
-      <a class="site" href="<?php print $base_path ?>"><?php if($site_name) {print $site_name;} else {print 'Home';} ?></a>
-      <?php if($sfsu_department) { ?>
-        <a class="parent" href="<?php print $sfsu_department_url ?>"> {<?php print $sfsu_department ?>}</a>
-      <?php } ?>
-    </h2>
+    <h2><?php if ($site_name): ?>
+	            <?php if ($title): ?>
+
+	                <a class="site" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+	                <?php print $site_name; ?>
+	                </a>
+	            <?php else: ?>
+	                <a class="site" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+	                <?php print $site_name; ?>
+	                </a>
+	            <?php endif; ?>
+	          <?php endif; ?> <a class="parent" href="http://www.sfsu.edu/template">SF State Web Template</a></h2>
+<!--     <a class="site" href="<?php print $base_path ?>"><?php if($site_name) {print $site_name;} else {print 'Home';} ?></a>
+      <?php #if($sfsu_department) { ?>
+        <a class="parent" href="<?php print $sfsu_department_url ?>"> <?php print $sfsu_department ?></a>
+      <?php #} ?>
+    </h2>-->
   </div>
 </div><!-- x site -->
 
