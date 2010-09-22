@@ -12,7 +12,7 @@ engine = phptemplate
 stylesheets[all][] = includes/global.css
 stylesheets[all][] = includes/local.css
 ;stylesheets[all][] = includes/style.css
-stylesheets[all][] = includes/table.css
+;stylesheets[all][] = includes/table.css
 stylesheets[print][] = includes/print.css
 
 ; To prevent stylesheets of a base theme or of a module from being included in
