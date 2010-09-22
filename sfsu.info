@@ -1,9 +1,14 @@
 ; $Id: sfsu.info,v 3.0 2008/05/15 23:27:32 goba Exp $
 name = sfsu
 description = Tableless, recolorable, multi-column, based on SFSU Template.
+
+  ; The screenshot used on the admin/build/themes page.
+screenshot = screenshot.png
+
 version = VERSION
 core = 6.x
 engine = phptemplate
+
 stylesheets[all][] = includes/global.css
 stylesheets[all][] = includes/local.css
 stylesheets[all][] = includes/style.css
@@ -19,6 +24,9 @@ stylesheets[all][] = modules/node/defaults.css
 stylesheets[all][] = modules/node/system.css
 stylesheets[all][] = modules/node/system-menus.css
 stylesheets[all][] = modules/user/user.css
+
+; Set the conditional stylesheets that are processed by IE.
+conditional-stylesheets[if IE][all][] = includes/ie.css
 
 regions[promobox] = Promobox
 regions[left] = Left sidebar

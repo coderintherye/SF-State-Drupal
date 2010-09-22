@@ -9,7 +9,7 @@ if (is_null(theme_get_setting('sfsu_imagebar_url'))) {
   // The default values for the theme variables. Make sure $defaults exactly matches the $defaults in the theme-settings.php file.
 
   $defaults = array(  
-    'sfsu_imagebar_url' => 'images/imagebox.jpg',
+    'sfsu_imagebar_url' => 'http://www.sfsu.edu/template/preview/images/imagebox.jpg',
     'sfsu_local_css' => '',
     'sfsu_department' => '',
     'sfsu_department_url' => '',

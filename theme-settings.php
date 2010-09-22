@@ -13,8 +13,7 @@ function sfsu_settings($saved_settings) {
   * matches the $defaults in the template.php file.
   */
   $defaults = array(
-#    'sfsu_imagebar_url' => 'http://www.sfsu.edu/template/images/imagebox.jpg',
-	'sfsu_imagebar_url' => 'images/imagebox.jpg',
+    'sfsu_imagebar_url' => 'http://www.sfsu.edu/template/preview/images/imagebox.jpg',
     'sfsu_local_css' => '',
     'sfsu_department' => '',
     'sfsu_department_url' => '',
@@ -26,14 +25,14 @@ function sfsu_settings($saved_settings) {
   $form['sfsu_imagebar_url'] = array(
     '#type' => 'textfield',
     '#title' => t('The URL to your custom imagebar'),
-    '#description' => t('This is the fully qualified URL to a imagebar image for the header of your site. e.g., http://www.sfsu.edu/template/images/imagebar.jpg'),
+    '#description' => t('This is the fully qualified URL to a imagebar image for the header of your site. e.g., http://www.sfsu.edu/template/preview/images/imagebar.jpg'),
     '#default_value' => $settings['sfsu_imagebar_url'],
   );
 
   $form['sfsu_local_css'] = array(
     '#type' => 'textfield',
     '#title' => t('The URL to your custom CSS'),
-    '#description' => t('This is the fully qualified URL to a custom stylesheet. e.g., http://www.sfsu.edu/~itpolicy/includes/local.css'),
+    '#description' => t('This is the fully qualified URL to a custom stylesheet. e.g., http://www.sfsu.edu/template/preview/includes/local.css'),
     '#default_value' => $settings['sfsu_local_css'],
   );
 
