@@ -13,7 +13,8 @@ function sfsu_settings($saved_settings) {
   * matches the $defaults in the template.php file.
   */
   $defaults = array(
-    'sfsu_imagebar_url' => 'http://www.sfsu.edu/template/images/imagebox.jpg',
+#    'sfsu_imagebar_url' => 'http://www.sfsu.edu/template/images/imagebox.jpg',
+	'sfsu_imagebar_url' => 'images/imagebox.jpg',
     'sfsu_local_css' => '',
     'sfsu_department' => '',
     'sfsu_department_url' => '',
