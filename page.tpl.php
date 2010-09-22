@@ -124,7 +124,7 @@ http://www.sfsu.edu/template and to meet California Government Code 11135, imple
        $bc2 = substr($bc2, 5);
      }
      $breadcrumb_display = '<p id="top">'. $bc2 .'</p>';
-       print $breadcrumb_display;
+       #print $breadcrumb_display;
      }
      if($content && user_access('access content')) {
        print $content;
