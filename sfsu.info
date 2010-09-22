@@ -4,9 +4,21 @@ description = Tableless, recolorable, multi-column, based on SFSU Template.
 version = VERSION
 core = 6.x
 engine = phptemplate
-stylesheets[all][] = style.css
-stylesheets[all][] = table.css
-stylesheets[print][] = print.css
+stylesheets[all][] = includes/global.css
+stylesheets[all][] = includes/local.css
+stylesheets[all][] = includes/style.css
+stylesheets[all][] = includes/table.css
+stylesheets[print][] = includes/print.css
+
+; To prevent stylesheets of a base theme or of a module from being included in
+; our sub-theme, we specify it in our .info file (and we don't need to have a
+; stylesheet in our sub-theme with that name.)
+
+stylesheets[all][] = modules/node/node.css
+stylesheets[all][] = modules/node/defaults.css
+stylesheets[all][] = modules/node/system.css
+stylesheets[all][] = modules/node/system-menus.css
+stylesheets[all][] = modules/user/user.css
 
 regions[promobox] = Promobox
 regions[left] = Left sidebar
