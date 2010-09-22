@@ -66,12 +66,12 @@ http://www.sfsu.edu/template and to meet California Government Code 11135, imple
 <div id="contentstripe"><div id="contentbox">
 <!-- o nav -->
     <div id="nav">
-    <?php $menu_name = variable_get('menu_primary_links_source', 'primary-links'); ?>
-    <?php if ($menu_name): ?>
-      <div id="primary">
-        <?php print menu_tree($menu_name); ?>
-      </div>
-    <?php endif; ?>
+    <?php #$menu_name = variable_get('menu_primary_links_source', 'primary-links'); ?>
+    <?php #if ($menu_name): ?>
+      <!--<div id="primary">
+        <?php #print menu_tree($menu_name); ?>
+      </div>-->
+    <?php #endif; ?>
     <!--This prints the what you have placed in the left block. Place navigation here via the block administration page to comply with template --> 
       <!-- left is used for 6.x themes -->
       <?php if($left): ?>
@@ -135,10 +135,7 @@ http://www.sfsu.edu/template and to meet California Government Code 11135, imple
 </div>
 </div>
 <!-- x content -->
-<!-- javascript 
-  <script type="text/javascript" src="https://www.sfsu.edu/template/includes/global.js"></script>
-  <script type="text/javascript"><?php /* Needed to avoid Flash of Unstyle Content in IE */ ?> </script>
--->
+
 <!-- javascript -->
 <script type="text/javascript" src="<?php print base_path() . path_to_theme() ?>/includes/global.js"></script>
 <?php print $scripts; ?>
