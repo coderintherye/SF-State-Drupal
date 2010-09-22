@@ -1,0 +1,213 @@
+/* - - - - - - - *************************************
+Template Version 1.05 - May 2009
+
+Read Me: Use of this template constitutes an agreement
+to follow the SF State Web Template Guidelines at
+http://www.sfsu.edu/~news/webtemplate and to meet
+California Government Code 11135, implementing Section 508
+legislation at http://www.sfsu.edu/~dprc/access/ 
+before publishing pages to the Web. 
+************************************* - - - - - - - */
+
+*						{margin:0px; padding:0px; font-size:100%}
+
+html					{}
+
+body					{min-width:552px; font:62.5%/170% Arial, sans-serif; color:#565656; background:#444444 url(../images/bgbody.png) repeat-y left center;}
+
+img						{border:0;}
+
+.clearfloat				{clear:both; height:0px; overflow:hidden;}
+.clearleft				{clear:left; height:0px; overflow:hidden;}
+.readernote				{position:absolute; top:-9999px; color:#565656;}
+.searchbox				{margin:0 5px 0 0; padding:0px; border:1px solid #cccccc; color:#565656;}
+.searchbox:focus		{border:1px solid #eebb44;}
+.searchbutton			{margin: 0 0 -4px 0; border:none; color:#777777;}
+
+/* - - - - - - - utility - - - - - - - */
+
+#utilitystripe			{width:100%; background:#333333;}
+
+#utilitybox				{width:98%; max-width:900px; margin:auto; padding-top:8px; text-align:right; font-size:110%; color:#cccccc; background:#333333;}
+
+
+/* - - - - - - - site - - - - - - - */
+
+#sitestripe			{width:100%; background:#333333;}
+
+#sitebox				{width:98%; max-width:900px; margin:0 auto; height:60px; text-align:left; background:#333333;}
+
+
+/* - - - - - - - image - - - - - - - */
+
+#imagestripe			{width:100%; background:#333333 url(../images/imagebox.jpg) repeat-x 50% 0;}
+
+#imagebox				{width:98%; max-width:900px; height:60px; margin:auto; padding:0; background:#333333 url(../images/imagebox.jpg) repeat-x 50% 0;}
+
+#promobox				{width:180px; height:60px; overflow:auto; float:right; background:#e2af2d;}
+
+
+/* - - - - - - - content - - - - - - - */
+
+#contentstripe			{width:100%; background:#ffffff;}
+
+#contentbox				{width:98%; max-width:900px; margin:auto; padding:20px 0; background:#ffffff;}
+
+
+/* - - - - - - - menu - - - - - - - */
+
+#menustripe				{width:100%; background:#4d4d4d;}
+
+#menubox				{width:98%; max-width:900px; margin:auto; padding:15px 0; border:none; color:#cccccc; background:#4d4d4d;}
+
+
+/* - - - - - - - footer - - - - - - - */
+
+#footerstripe			{width:100%; background:transparent;}
+
+#footerbox				{width:98%; max-width:900px; margin:0 auto; text-align:left; color:#666666; background:transparent;}
+
+
+/* - - - - - - - content columns - - - - - - - */
+
+#main					{margin:0 180px; padding:0 30px 0 15px; border-left:1px dotted #cccccc;}
+#nav					{float:left; width:165px;}
+#sidebar				{float:right; width:165px; padding-left:15px; border-left:1px dotted #cccccc;}
+
+
+/* - - - - - - - content styles - - - - - - - */
+
+#utilitystripe .skiplinks 	{position:absolute; top:0px; left:10px;}
+#utilitystripe .skiplinks li{list-style-type:none;}
+#utilitystripe a.skip  		{color:#333333;}
+#utilitystripe a.skip:focus	{color:#dddddd;}
+#utilitystripe a.skip:hover	{color:#dddddd;}	
+
+#utilitybox ul			{display:inline; margin:0; padding:7px 0;}	
+#utilitybox li			{display:inline; padding-left:7px; margin-right:7px; border-left:1px dotted #999999;}
+#utilitybox a			{text-decoration:none; color:#dddddd;}
+#utilitybox a:focus,
+#utilitybox a:hover		{text-decoration:none; color:#eebb44;}
+#utilitybox a:visited {color:#dddddd;text-decoration:none;}
+#utilitybox li#sfsutype	{border:none; font-size:120%; font-weight:bold; color:#eebb44;}
+#utilitybox #sfsutype a	{color:#eebb44;}
+#utilitybox #sfsutype a:focus,
+#utilitybox #sfsutype a:hover	{color:#dddddd;}
+#utilitybox form		{display:inline; line-height:0;}
+#utilitybox div			{display:inline; border:none}
+
+#promobox h2			{margin:20px 0px 5px 15px; font-size:110%; color:#464666;}
+#promobox p				{margin-left:10px; font-size:110%; color:#464666;}
+#promobox a				{text-decoration:none; border-bottom:1px solid #ddcc77; color:#464666;}
+#promobox a:focus,
+#promobox a:hover		{color:#333;}
+
+#sitebox h2			{margin-bottom:5px; padding-top:38px; font-size:200%; font-weight:bold; color:#ffffff;}
+#sitebox a.site		{text-decoration:none; color:#ffffff;}
+#sitebox a.site:focus,
+#sitebox a.site:hover{color:#eebb44;}
+#sitebox a.parent		{text-decoration:none; font-size:80%; color:#999999;}
+#sitebox a.parent:focus,
+#sitebox a.parent:hover{color:#bbbbbb;}
+
+#nav a					{text-decoration:none; border-bottom:1px solid #dddddd; color:#464666;}
+#nav a:hover,
+#nav a:focus			{color:#999900;}
+#nav li					{margin:0 0 7px 0; list-style-type:none; font-size:120%; font-weight:bold; color:#464666;}
+#nav li	ul 				{width:100%; margin:-6px 0 2px 0;}
+#nav li	ul li			{margin:0; padding-left:10px; font-size:95%; line-height:150%; font-weight:normal; background:url(images/bulletpurple.png) no-repeat left 7px;}
+#nav li	ul li a			{text-decoration:none; border-bottom:1px solid #ddddcc; color:#666600;}
+#nav h2					{margin-top:12px; margin-bottom:10px; font-size:110%; color:#886600;}
+
+#sidebar h2				{margin:15px 0 2px 0; font-size:110%; color:#464666;}
+#sidebar h3				{font-size:110%; font-style:italic; color:#886600;}
+#sidebar p				{margin-bottom:3px; font-size:110%; color:#666600;}
+#sidebar ul				{margin:3px 0 10px 2px;}
+#sidebar li				{padding-left:10px; list-style-type:none; font-size:110%; background:url(images/bulletpurple.png) no-repeat left 7px; color:#777744;}
+#sidebar a				{text-decoration:none; border-bottom:1px solid #ddddcc; color:#666600;}
+#sidebar a:focus,
+#sidebar a:hover		{color:#999900;}
+#sidebar .small			{font-size:100%; line-height:150%; font-style:italic;}
+#sidebar .first			{margin-top:0;}
+#sidebar .caption		{margin-bottom:10px; font-size:100%; line-height:150%; font-style:italic; color:#505066;}
+#sidebar img			{margin:20px 0 10px 0;}
+#sidebar a.bare			{border-bottom:none;}
+#sidebar .imgcap		{margin:10px 0 0 0;}
+#sidebar .imgcap img	{float:none; display:block; margin:0}
+#sidebar .searchbox		{color:#666600;}
+
+#main h1				{margin-bottom:6px; font-size:150%; color:#464666;}
+#main .smallh1			{font-size:90%; color:#5d5d88;}
+#main h2				{margin:5px 0; font-size:130%; color:#886600;}
+#main h3				{margin:2px 0; font-size:120%; color:#464666}
+#main h4				{font-size:120%; font-weight:normal; font-style:italic; color:#886600;}
+#main p					{margin:2px 0 4px 0; font-size:120%;}
+#main .intro			{font-size:130%; line-height:150%; color:#505066;}
+#main .small			{font-size:100%; line-height:150%; font-style:italic; color:#505066;}
+#main .caption			{font-size:100%; line-height:150%; font-style:italic; color:#505066;}
+
+#main a					{text-decoration:none; border-bottom:1px solid #ddddcc; color:#666600;}
+#main a:visited			{color:#545454;}
+#main a:focus,
+#main a:hover			{color:#999900;}
+
+#main a.skip,
+#main a.skip:visited	{margin:0; text-decoration:none; border:none; font-size:90%; line-height:100%; color:#ffffff;}
+#main a.skip:focus,		
+#main a.skip:hover		{color:#666600; border-bottom:1px solid #ddddcc;}
+
+#main ul				{margin:2px 0 4px 2px;}
+#main ul li				{padding-left:10px; list-style-type:none; font-size:110%; background:url(../images/bulletpurple.png) no-repeat left 7px;}
+#main li a				{text-decoration:none; border-bottom:1px solid #ddddcc; color:#666600;}
+#main li a:focus,
+#main li a:hover		{color:#999900;}
+#main ol				{margin:2px 0 4px 22px;}
+#main ol li				{font-size:110%;}
+
+#main table				{width:100%; margin:4px 0; text-align:left; font-size:110%; color:#666600;}
+#main table a			{border-bottom:1px solid #ddddcc; color:#666600;}
+#main table a:visited	{color:#666600;}
+#main table a:focus,
+#main table a:hover		{color:#999900;}
+#main .tablecol1		{width: 50%;}
+#main .tablecol2		{width: 25%;}
+#main .tablecol3		{width: 25%;}
+#main td, #main th		{padding-right:10px; vertical-align:top; border-top: 1px dotted #ddddcc;}
+#main thead th			{font-weight:normal; color:#505066}
+#main tfoot				{font-size:95%;}
+
+#main img				{float:left; margin:4px 15px 5px 0;}
+#main img.full			{width:470px; display:block; float:none; margin:15px 0 5px 0;}
+#main .imgcap			{float:left; margin:4px 15px 0px 0;}
+#main .imgcap img		{float:none; display:block; margin:0}
+
+#main .brief			{width:100%; float:left; padding-top:10px; border-top:1px dotted #ddcc77;}
+#main .brief img		{float:left; margin:4px 15px 5px 0;}
+#main .brief p			{margin-bottom:15px;}
+#main .brief h2			{margin-top:0; }
+#main .brief h2 a		{padding-left:15px; background:url(../images/arrowgold.png) no-repeat 0 5px; color:#886600;}
+#main .brief h2 a:focus,
+#main .brief h2 a:hover	{color:#999900;}
+
+#main .localnav li		{list-style-type:none; padding-left:10px; font-size:110%; background:url(../images/inpagelink.png) no-repeat 0 4px;}
+#main .top				{margin:0 0 8px 0; font-size:100%; color:#666600;}
+#main .localnav a:visited,	
+#main .top a:visited	{color:#666600;}
+#main .localnav a:focus,
+#main .top a:focus,
+#main .localnav a:hover,
+#main .top a:hover		{color:#999900;}
+
+#footerbox ul			{line-height:50px; float:right;}	
+#footerbox li			{display:inline; padding-left:4px; margin-right:4px; border-left:1px solid #777777; color:#ccc;}
+#footerbox li.first		{border-left:none;}
+#footerbox a			{text-decoration:none; border-bottom:1px solid #565656; color:#ccc;}
+#footerbox a:hover		{color:#ffffff;}
+#footerbox img			{float:left; vertical-align:top; margin:0 0 0 130px; padding-bottom:30px;}
+
+#attention {background-color:#ffffcc;color:#000; width:90%; border:1px solid #ffcc33;padding:5px; margin:5px;}
+#attention h2 {font-size:200%; float:left; padding:10px 5px 5px 10px ;line-height:110%;}
+#attention p {font-size:110%; line-height:120%;}
+#attention img {float:left;}
+
+
