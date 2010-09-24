@@ -1,0 +1,14 @@
+/* - - - - - - - for ie6 min + max width - - - - - - - */
+
+
+
+#utilitybox,
+#sitebox,
+#imagebox,
+#contentbox,
+#menubox,
+#footerbox,
+#contentbox		{width:expression(document.body.clientWidth > 902 ? "900px" : document.body.clientWidth < 554? "552px" : "auto");
+.lengthfix              {width:87%;}
+.lengthfix_crs          {width:920px !important;}
+

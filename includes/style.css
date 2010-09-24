@@ -1,0 +1,58 @@
+body					{min-width:552px; height:100%; font:62.5%/170% Arial, sans-serif; color:#565656; background:#444444 url(../images/bgbody.png) repeat-y left center; border:none;}
+
+/* - - - - - - - image - - - - - - - */
+#imagestripe			{width:100%; background:#333333 url(../images/imagebox.jpg) repeat-x 50% 0;}
+
+#imagebox				{width:100%; max-width:900px; height:60px; margin:auto; padding:0; background:#333333 url(../images/imagebox.jpg) repeat-x 50% 0;}
+
+#promobox				{width:180px; height:60px; overflow:auto; float:right; background:#e2af2d;}
+
+/* - - - - - - - content styles - - - - - - - */
+
+#utilitystripe .skiplinks {}
+
+#utilitystripe a.skip {color:#333333;}
+
+#promobox h2			{margin:20px 0px 5px 15px; font-size:110%; color:#ffffff;}
+#promobox p				{margin-left:10px; font-size:110%; color:#ffffff;}
+#promobox a				{text-decoration:none; border-bottom:1px solid #ddcc77; color:#ffffff;}
+#promobox a:focus,
+#promobox a:hover		{color:#ddcc77;}
+
+#nav li					{margin:0 0 7px 0; list-style-type:none; font-size:120%; font-weight:bold; color:#464666;}
+#nav li	ul 				{width:100%; margin:0 0 2px 0;}
+#nav li	ul li			{margin:0; padding-left:10px; font-size:95%; line-height:150%; font-weight:normal; background:url(../images/bulletpurple.png) no-repeat left 7px;}
+
+#sidebar li				{padding-left:10px; list-style-type:none; font-size:110%; background:url(../images/bulletpurple.png) no-repeat left 7px; color:#777744;}
+
+#main {min-height:300px;}
+#main ul li				{padding-left:10px; list-style-type:none; font-size:110%; background:url(../images/bulletpurple.png) no-repeat left 7px;}
+#main .brief 			{border-top:1px dotted #DDCC77;float:left;padding-top:10px;width:100%;}
+#main .brief h2 		{margin-top:0pt;}
+#main .brief h2 a		{padding-left:15px; background:url(../images/arrowgold.png) no-repeat 0 5px; color:#886600;}
+
+#main .localnav li		{list-style-type:none; padding-left:10px; font-size:110%; background:url(../images/inpagelink.png) no-repeat 0 4px;}
+
+#footerbox li			{display:inline; padding-left:4px; margin-right:4px; border-left:1px solid #777777; color:#999999;}
+#footerbox a			{text-decoration:none; border-left:none; border-bottom:1px solid #565656; color:#999999;}
+#footerbox img			{border:none; float:left; vertical-align:top; margin:0 0 0 130px; padding-bottom: 30px;}
+
+/*------ Styles to override Drupal defaults in order to get things to work ----- */
+
+#nav li ul 			{margin:0px;}
+ul.links li 			{display:block;}
+.node-form .standard 		{clear:none}
+.profile 			{clear:none}
+.form-submit			{width:110px;}
+.resizable-textarea 		{font-size:150%;}
+.textarea-identifier 		{display:none;}
+.tips 				{display:none;}
+.description 			{font-size:125%}
+.form-item label 		{font-size:125%}
+.labeler 			{font-size:12px}
+.theme-settings-bottom 		{clear:none;}
+table.views-entry 		{clear:none;}
+
+/* Fix how Drupal uses clear-block to prevent the content getting pushed down into the footer */
+.clearfix {display:inline;}
+.clear-block{display:inline;}
